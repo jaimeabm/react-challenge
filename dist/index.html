@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="no-js" lang="es-MX">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Front End Challenge
+    </title>
+    <meta name="description" content="This code challenge allows you to choose your own path and lets you flaunt your creative panache and technical skills along the way">
+    <meta name="keywords" content="Show top 100 albums based on the json feed here: https://itunes.apple.com/us/rss/topalbums/limit=100/json ,A clean modern look ,Clean, readable, maintainable codebase ,Source code on Github or Bitbucket ,Cross browser support (or graceful degradation) ,Responsive design and implementation ,A good user experience">
+    <meta name="google" value="notranslate">
+    <!-- Place favicon.ico in the root directory -->
+</head>
+
+<body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!-- Add your site or application content here -->
+
+    <!-- Header Starts -->
+    <header class="main-header">
+        <div class="container text-center-xs">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <!-- Logo Starts -->
+                    <h4>M2G</h4>
+                    <!-- Logo Ends -->
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <ul class="list-unstyled list-inline top-links text-right-lg text-right-md text-right-sm text-bold">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Log In</a></li>                            
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends -->
+    <!-- Main Menu Starts -->
+    <nav id="nav" class="main-menu navbar flat">
+        <!-- Nested Container Starts -->
+        <div class="container">
+            <!-- Nav Header Starts -->
+            <div class="navbar-header">
+                <button type="button" class="btn btn-navbar navbar-toggle flat animation" data-toggle="collapse" data-target=".navbar-cat-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <!-- Nav Header Ends -->
+            <!-- Navbar Cat collapse Starts -->
+            <div class="collapse navbar-collapse navbar-cat-collapse">
+                <ul class="nav navbar-nav text-uppercase text-bold">
+                    <li class="active"><a href="index.html">Music</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Navbar Cat collapse Ends -->
+        </div>
+        <!-- Nested Container Ends -->
+    </nav>
+    <!-- Main Menu Ends -->
+    <!-- Search Section Starts -->
+    <section class="search-area parallax">
+        <!-- Nested Container Starts -->
+        <div class="container text-center">
+            <h3 class="text-normal">Top 100 Albums iTunes - Find your album</h3>
+            <form class="top-search">
+                <div class="input-group-md">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-lg btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fas fa-music"></span>
+                            <span class="text-label">Album or the Category</span> 
+                            <span class="fa fa-angle-down"></span>
+                        </button>
+                        <ul class="dropdown-menu flat" role="menu">
+                            <li class="lead text-uppercase">All</li>
+                            <li class="lead text-uppercase">Rock</li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <div class="icon-addon addon-lg">
+                            <label class="fa fa-search"></label>
+                            <input type="text" class="form-control input-lg flat" name="search-location" placeholder="Album Name">
+                        </div>
+                    </div>
+                    <span class="input-group-btn">
+                        <button class="btn btn-lg btn-secondary animation text-uppercase" type="button">Search</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <!-- Nested Container Ends -->
+    </section>
+
+        <div id="react-container"></div>
+
+    <!-- Newsletter Section Starts -->
+    <section class="footer-top">
+        <div class="container">
+            <h3 class="text-center text-bold">Designer by Jaime Banda</h3>
+            <ul class="list-unstyled list-inline text-center">
+                <li><i class="fa fa-check-circle"></i> <a href="https://github.com/jaimeabm">GitHub</a></li>
+                <li><i class="fa fa-check-circle"></i> <a href="https://www.linkedin.com/in/jaime-banda/">Linkedin</a></li>
+            </ul>
+        </div> 
+    </section>
+    <!-- Footer Area Starts -->
+    <footer class="main-footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Starts -->
+                    <div class="col-md-3 col-xs-12">
+                        <!-- Logo Starts -->
+                        <h5>M2gen</h5>
+                    </div>
+                <!-- Logo Ends -->
+                <!-- Page Links Starts -->
+                    <div class="col-md-6 col-xs-12">
+                        <ul class="list-unstyled list-inline page-links text-center">
+                            <li><a href="#">More Music</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                <!-- Page Links Ends -->
+                <!-- Social Media Links Starts -->
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled list-inline sm-links text-right-lg text-right-md text-center-sm text-center-xs">
+                            <li>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-secondary">
+                                    <i class="fab fa-google-plus-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- Social Media Links Ends -->
+                <!-- Copyright Starts -->
+                <p class="copyright">
+                    Copyright © <date>. M2GEN.
+                </p>
+                </div>
+        </div>
+    </footer>
+<!--Custom scripts
+
+<script>
+window.jQuery || document.write('<script src=/static/js/vendor/jquery-3.2.1.min.js"><\/script>')
+</script>-->
+<!--
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>-->
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+<script>
+window.ga = function() { ga.q.push(arguments) };
+ga.q = [];
+ga.l = +new Date;
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
+<script type="text/javascript" src="js/bundle.js"></script><script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
