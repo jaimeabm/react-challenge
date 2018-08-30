@@ -9,15 +9,6 @@ export const filterBy = (state = "", action) => {
     }
 }
 
-export const feed = (state = {}, action) => {
-    switch (action.type) {
-        case C.LOAD:
-            return {}
-        default :
-            return state
-    }
-}
-
 export const hasErrored = (state = false, action) => {
     switch (action.type) {
         case C.itemsHasErrored:
@@ -26,6 +17,7 @@ export const hasErrored = (state = false, action) => {
             return state;
     }
 }
+
 export const isLoading = (state = false, action) => {
     switch (action.type) {
         case C.itemsIsLoading:
@@ -35,11 +27,11 @@ export const isLoading = (state = false, action) => {
     }
 }
 
-export const fetchData = (state = "", action) => {
+export function data(state = {}, action) {
     switch (action.type) {
-        case C.FETCH:
-            return action.url
-        default :
-            return state
+        case C.FETCH_DATA_SUCCESS:
+            return action.data;
+        default:
+            return state;
     }
 }

@@ -3,19 +3,17 @@ import { SearchContainer, AlbumsContainer } from './Containers'
 //import AlbumList from './ui/AlbumList'
 
 class App extends Component {
-
     componentWillMount() {
-        console.log("componentWillMount")
+        console.log("componentWillMount event in App Componenet")
     }
 
     render() {
 
         return (
-            <div>
+            <div>                
                 <SearchContainer />
                 <AlbumsContainer />
-            </div>
-            
+            </div>            
         );
     }
 }

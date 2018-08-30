@@ -4,7 +4,6 @@ import { Provider } from 'react-redux'
 import App from './src/components/App'
 import storeCreated from './src/store'
 
-
 // Import libraries(bootstrap), css's, fonts
 import fontawesome from '@fortawesome/fontawesome/index'
 import faBars from '@fortawesome/fontawesome-free-solid/faBars'

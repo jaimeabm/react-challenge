@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'
 
 const Search = ({onFilter = f=>f}) =>{
-    console.log(onFilter)
     let _searchText;
-    
     
     const submit = e => {
         e.preventDefault()

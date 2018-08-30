@@ -19,14 +19,22 @@ export const itemsIsLoading = (isLoading) =>
             isLoading
     })
 
-export const loadData = (feed) =>
+export const fetchDataSuccess = (data)=>
     ({
-        type: C.LOAD,
-        feed
+        type: C.FETCH_DATA_SUCCESS,
+        data
     })
-    
-export const getData = (url) =>
-    ({
-        type: C.FETCH,
-        url
-    })
+
+export const itemsFetchData = (url) => (dispatch) => 
+    {                
+        fetch(url)
+            .then((response) => {
+                if (!response.ok) {
+                    throw Error(response.statusText)}
+                dispatch(itemsIsLoading(false));
+                return response;
+            })
+            .then((res) => res.json())
+            .then((data) => dispatch(fetchDataSuccess(data)))
+            .catch(() => dispatch(itemsHasErrored(true)));
+    }

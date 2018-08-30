@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import Search from './ui/Search'
 import AlbumList from './ui/AlbumList'
-import { filterByText } from '../Actions'
+import { filterByText, itemsFetchData, itemsIsLoading } from '../Actions'
 
 export const SearchContainer = connect(
     null,
@@ -18,8 +18,15 @@ export const AlbumsContainer = connect(
     state =>
         ({
             filterBy: state.filterBy,
-            feed: state.feed
+            data: state.data,
+            hasErrors: state.hasErrored,
+            isLoading: state.isLoading,
         }),
     dispatch =>
-        ({  })
+        ({  
+            fetchData: (url) => {
+                dispatch(itemsIsLoading(true));
+                dispatch(itemsFetchData(url))
+            }
+        })
 )(AlbumList)
