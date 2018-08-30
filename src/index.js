@@ -27,9 +27,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 const store = storeCreated
 
-console.log("The store is: ")
-console.log(store.getState())
-
 window.React = React
 //window.store = store
 render(<Provider store={store}>

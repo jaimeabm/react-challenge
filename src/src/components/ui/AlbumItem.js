@@ -20,5 +20,4 @@ const AlbumItem = (e = {}) =>
             </div>
         </div>
 
-
 export default AlbumItem

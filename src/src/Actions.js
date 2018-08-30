@@ -18,4 +18,3 @@ export const getData = (url) =>
         type: C.FETCH,
         url
     })
-

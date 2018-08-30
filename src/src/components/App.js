@@ -9,12 +9,6 @@ class App extends Component {
     }
 
     render() {
-        const { store } = this.context
-
-        console.log('APP props: ');
-        console.log(this.props);
-        console.log('APP store: ');
-        console.log(store.getState())
 
         return (
             <div>
