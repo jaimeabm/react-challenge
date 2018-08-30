@@ -7,6 +7,18 @@ export const filterByText = (text) =>
         text
     })
 
+export const itemsHasErrored = (hasErrored) =>
+    ({
+            type: C.HAS_ERRORED,
+            hasErrored
+    })
+
+export const itemsIsLoading = (isLoading) =>
+    ({
+            type: C.IS_LOADING,
+            isLoading
+    })
+
 export const loadData = (feed) =>
     ({
         type: C.LOAD,
