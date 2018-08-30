@@ -715,12 +715,20 @@ h6 {
     margin: 15px 5px 15px 5px;
     padding: 5px 3px 5px 3px;
     list-style: none;
-    max-height: 300px;
+    max-height: 600px;
     margin-bottom: 10px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-.list-group > li{
-
+.card{
+    margin:15px 2px 15px 2px;
+    padding:5px;
 }
+
+.card-text, .card-title{
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
+}
+

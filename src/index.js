@@ -1,13 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
-//import { Provider } from 'react-redux'
-import App from './components/App'
+import { Provider } from 'react-redux'
+import App from './src/components/App'
+import storeCreated from './src/store'
 
 
 // Import libraries(bootstrap), css's, fonts
 import fontawesome from '@fortawesome/fontawesome/index'
 import faBars from '@fortawesome/fontawesome-free-solid/faBars'
-import faMapMarker from '@fortawesome/fontawesome-free-solid/faMapMarker'
 import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown'
 import faSearch from '@fortawesome/fontawesome-free-solid/faSearch'
 import faCheckCircle from '@fortawesome/fontawesome-free-solid/faCheckCircle'
@@ -25,10 +25,15 @@ import './css/main.css';
 import './css/responsive.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-//const store = storeFactory()
+const store = storeCreated
+
+console.log("The store is: ")
+console.log(store.getState())
 
 window.React = React
 //window.store = store
-render(<App />,
+render(<Provider store={store}>
+            <App />
+       </Provider>,
     document.getElementById('react-container')
 )
