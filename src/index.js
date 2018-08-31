@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import App from './src/components/App'
-import storeCreated from './src/store'
+import storeFactory from './src/store'
 
 // Import libraries(bootstrap), css's, fonts
 import fontawesome from '@fortawesome/fontawesome/index'
@@ -24,10 +24,10 @@ import '../css/main.css';
 import '../css/responsive.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-const store = storeCreated
+const store = storeFactory()
 
 window.React = React
-window.store = store
+//window.store = store
 render(<Provider store={store}>
             <App />
        </Provider>,
