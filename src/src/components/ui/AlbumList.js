@@ -46,8 +46,8 @@ class AlbumList extends Component {
                                     <p>No Albums to display.</p> :
                                     filterBy ?
                                         entry.filter(e => e['im:artist'].label.toLowerCase().indexOf(filterBy.toLowerCase()) > -1)
-                                            .map((e, i) => <li key={i}><AlbumItem key={i} {...e} /></li>) :
-                                        entry.map((e, i) => <li><AlbumItem key={i} {...e} /></li>)
+                                            .map((e, i) => <AlbumItem key={i} {...e} />) :
+                                        entry.map((e, i) => <AlbumItem key={i} {...e} />)
                                 }
                             </ul>
                 }

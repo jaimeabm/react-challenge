@@ -5,7 +5,7 @@ let albumItemStyle = {
 };
 
 const AlbumItem = (e = {}) =>
-        <div className="col-xs-12 col-md-4">
+        <li>
             <div className="card text-center" style={albumItemStyle}>
                 <div className="img">
                     <img className="card-img-top"  alt="Card picture caption" src={e['im:image'][2].label}/>
@@ -18,6 +18,6 @@ const AlbumItem = (e = {}) =>
                     </a>
                 </div>
             </div>
-        </div>
+        </li>
 
 export default AlbumItem
