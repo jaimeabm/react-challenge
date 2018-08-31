@@ -20,14 +20,14 @@ fontawesome.library.add(faGooglePlusSquare,faFacebook, faTwitter)
 
 import 'normalize.css/normalize.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/main.css';
-import './css/responsive.css';
+import '../css/main.css';
+import '../css/responsive.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 const store = storeCreated
 
 window.React = React
-//window.store = store
+window.store = store
 render(<Provider store={store}>
             <App />
        </Provider>,

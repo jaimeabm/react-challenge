@@ -94,7 +94,7 @@ module.exports = {
         }),
         new webpack.DefinePlugin({
             "process.env": {
-                NODE_ENV: JSON.stringify("development")
+                NODE_ENV: JSON.stringify("production")
             },
             PRODUCTION: JSON.stringify(false),
             VERSION: JSON.stringify("1.0"),
@@ -103,7 +103,7 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin({
             compress: { warnings: false },
             sourceMap: true,
-            mangle: false
+            mangle: true
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.optimize\.css$/g,
@@ -117,6 +117,7 @@ module.exports = {
             "files": {
                 "css": ["css/main.css"],
                 "js": ["js/head_bundle.js", "js/bundle.js"],
+                "img": ["img/"],
                 "chunks": {
                     "head": {
                         "entry": "js/head_bundle.js",
