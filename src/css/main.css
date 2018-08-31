@@ -719,6 +719,8 @@ h6 {
     margin-bottom: 10px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: center;
 }
 
 .card{

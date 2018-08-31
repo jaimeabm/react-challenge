@@ -35,23 +35,23 @@ class AlbumList extends Component {
         const entry = Object.keys(this.props.data).length === 0 ? null : this.props.data.feed.entry
         const filterBy = this.props.filterBy      
         return (
-            <div className="container">
+            <div className="">
                 {
                     hasErrors ?
                         <p>Errors, unable to pull the data</p> :
                         isLoading ?
                             <p>Loading Data</p> :
-                            <div className="row text-center list-group">
+                            <ul className="list-group">
                                 {(entry === undefined || entry === null) || entry.length === 0 ?
                                     <p>No Albums to display.</p> :
                                     filterBy ?
-                                        entry.filter(e => e['im:artist'].label.indexOf(filterBy) > -1).map((e, i) => <AlbumItem key={i} {...e} />) :
+                                        entry.filter(e => e['im:artist'].label.indexOf(filterBy) > -1).map((e, i) => <li className="text-center"><AlbumItem key={i} {...e} /></li>) :
                                         entry.map((e, i) => <AlbumItem key={i} {...e} />)
                                 }
-                            </div>
+                            </ul>
                 }
             </div>
-        );
+        )
     }
 }
 
