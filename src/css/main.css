@@ -712,19 +712,23 @@ h6 {
 /*List result*/
 
 .list-group{
-    margin: 15px 5px 15px 5px;
+    margin: 5px 5px 5px 5px;
     padding: 5px 3px 5px 3px;
     list-style: none;
     max-height: 600px;
     margin-bottom: 10px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    text-align: left;
     display: flex;
-    justify-content: center;
+    -webkit-display: -webkit-flex;
 }
 
+.list-group > li {
+
+}
 .card{
-    margin:15px 2px 15px 2px;
+    margin:15px 1px 15px 1px;
     padding:5px;
 }
 

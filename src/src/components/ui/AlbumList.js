@@ -35,17 +35,18 @@ class AlbumList extends Component {
         const entry = Object.keys(this.props.data).length === 0 ? null : this.props.data.feed.entry
         const filterBy = this.props.filterBy      
         return (
-            <div className="">
+            <div className="row">
                 {
                     hasErrors ?
                         <p>Errors, unable to pull the data</p> :
                         isLoading ?
                             <p>Loading Data</p> :
-                            <ul className="list-group ">
+                            <ul className="list-group">
                                 {(entry === undefined || entry === null) || entry.length === 0 ?
                                     <p>No Albums to display.</p> :
                                     filterBy ?
-                                        entry.filter(e => e['im:artist'].label.indexOf(filterBy) > -1).map((e, i) => <li><AlbumItem key={i} {...e} /></li>) :
+                                        entry.filter(e => e['im:artist'].label.toLowerCase().indexOf(filterBy.toLowerCase()) > -1)
+                                            .map((e, i) => <li key={i}><AlbumItem key={i} {...e} /></li>) :
                                         entry.map((e, i) => <li><AlbumItem key={i} {...e} /></li>)
                                 }
                             </ul>
