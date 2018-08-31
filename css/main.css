@@ -719,16 +719,13 @@ h6 {
     margin-bottom: 10px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    text-align: left;
-    display: flex;
-    -webkit-display: -webkit-flex;
+    text-align: center;
+    display: inline-block;
 }
 
-.list-group > li {
-
-}
 .card{
-    margin:15px 1px 15px 1px;
+    text-align: center;
+    margin:15px auto;
     padding:5px;
 }
 

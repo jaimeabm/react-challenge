@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types'
 
 let albumItemStyle = {
-    width: "20rem"
+    width: "25rem"
 };
 
 const AlbumItem = (e = {}) => {
 
     let isEmpty = false;
-    let imgSrc = e['im:image'][2].label  ? e['im:image'][2].label : ""
+    let imgSrc = e['im:image'][2].label ? e['im:image'][2].label : ""
 
     return (
-        <li>
-            <div className="card text-center" style={albumItemStyle}>
+        <div className="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div className="panel panel-default card " style={albumItemStyle}>
                 <div className="img">
                     <img className="card-img-top" alt="Card picture caption" src={imgSrc} />
                 </div>
@@ -23,7 +23,7 @@ const AlbumItem = (e = {}) => {
                     </a>
                 </div>
             </div>
-        </li>
+        </div>
     )
 }
 
