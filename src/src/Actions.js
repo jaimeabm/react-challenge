@@ -9,14 +9,14 @@ export const filterByText = (text) =>
 
 export const itemsHasErrored = (hasErrored) =>
     ({
-            type: C.HAS_ERRORED,
-            hasErrored
+        type: C.HAS_ERRORED,
+        hasErrored
     })
 
-export const itemsIsLoading = (isLoading) =>
+export const isLoading = (isLoading) =>
     ({
-            type: C.IS_LOADING,
-            isLoading
+        type: C.IS_LOADING,
+        isLoading
     })
 
 export const fetchDataSuccess = (data)=>
@@ -26,15 +26,18 @@ export const fetchDataSuccess = (data)=>
     })
 
 export const itemsFetchData = (url) => (dispatch) => 
-    {                
+    {
         fetch(url)
             .then((response) => {
                 if (!response.ok) {
                     throw Error(response.statusText)}
-                dispatch(itemsIsLoading(false));
+                //dispatch(isLoading(false));
                 return response;
             })
             .then((res) => res.json())
             .then((data) => dispatch(fetchDataSuccess(data)))
-            .catch(() => dispatch(itemsHasErrored(true)));
+            .catch(() => {
+                console.log('error');
+                dispatch(isLoading(true));
+            });
     }

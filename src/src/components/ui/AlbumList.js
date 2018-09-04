@@ -41,7 +41,7 @@ class AlbumList extends Component {
                         <p>Errors, unable to pull the data</p> :
                         isLoading ?
                             <p>Loading Data</p> :
-                            (entry === undefined || entry === null) || entry.length === 0 ?
+                            entry === null || entry.length === 0 ?
                                 <p>No Albums to display.</p> :
                                 filterBy !== "" ?
                                     entry.filter(e => e['im:artist'].label.toLowerCase().indexOf(filterBy.toLowerCase()) > -1)
