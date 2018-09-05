@@ -31,7 +31,7 @@ export const itemsFetchData = (url) => (dispatch) =>
             .then((response) => {
                 if (!response.ok) {
                     throw Error(response.statusText)}
-                //dispatch(isLoading(false));
+                dispatch(isLoading(false));
                 return response;
             })
             .then((res) => res.json())

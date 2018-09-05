@@ -19,7 +19,6 @@ export const hasErrored = (state = false, action) => {
 }
 
 export const isLoading = (state = true, action) => {
-    console.log("action.isLoading" + action)
     switch (action.type) {
         case C.IS_LOADING:            
             return action.isLoading;

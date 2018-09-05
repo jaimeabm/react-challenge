@@ -39,7 +39,7 @@ class AlbumList extends Component {
                 {
                     hasErrors ?
                         <p>Errors, unable to pull the data</p> :
-                        isLoading ?
+                        isLoading == true ?
                             <p>Loading Data</p> :
                             entry === null || entry.length === 0 ?
                                 <p>No Albums to display.</p> :

@@ -4,16 +4,11 @@ let albumItemStyle = {
     width: "25rem"
 };
 
-const AlbumItem = (e = {}) => {
-
-    let isEmpty = false;
-    let imgSrc = e['im:image'][2].label ? e['im:image'][2].label : ""
-
-    return (
+const AlbumItem = (e = {}) => 
         <div className="col-xs-12 col-sm-3 col-md-3 text-center">
             <div className="panel panel-default card " style={albumItemStyle}>
                 <div className="img">
-                    <img className="card-img-top" alt="Card picture caption" src={imgSrc} />
+                    <img className="card-img-top" alt="Card picture caption" src={e['im:image'][2].label} />
                 </div>
                 <div className="card-block">
                     <h5 className="card-title">{e['im:artist'].label}</h5>
@@ -24,7 +19,5 @@ const AlbumItem = (e = {}) => {
                 </div>
             </div>
         </div>
-    )
-}
 
 export default AlbumItem
