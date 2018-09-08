@@ -3,6 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path')
 var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 var CleanWebpackPlugin = require('clean-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: ['babel-polyfill', "./src/index.js"],
@@ -62,8 +63,8 @@ module.exports = {
                         loader: 'image-webpack-loader',
                         options: {
                             mozjpeg: {
-                                progressive: true,
-                                quality: 65
+                                progressive: false,
+                                quality: 80
                             },
                             // optipng.enabled: false will disable optipng
                             optipng: {
@@ -92,6 +93,9 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
+        new CopyWebpackPlugin([
+            {from:'img',to:'img'} 
+        ]),
         new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify("production")

@@ -348,13 +348,13 @@ h6 {
 /* Search Section Styles Starts */
 
 .search-area.flip {
-    background-image: url(../img/section-bg2.jpg);
+    background-image: url(../img/section-bg2.png);
 }
 
 .search-area {
-    padding-top: 30%;
-    padding-bottom: 60px;
-    background-image: url(../img/section-bg2.jpg);
+    padding-top: 15%;
+    padding-bottom: 30px;
+    background-image: url(../img/section-bg2.png);
 }
 
 .main-search {

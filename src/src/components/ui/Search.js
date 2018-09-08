@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types'
 
+let styles ={
+    backgroundImage: "url(img/section-bg2.png)"
+}
+
 const Search = ({onFilter = f=>f}) =>{
     let _searchText;
     
@@ -9,7 +13,7 @@ const Search = ({onFilter = f=>f}) =>{
     }
 
     return (
-        <section className="search-area flip parallax">
+        <section className="search-area flip parallax" style={styles}>
             <div className="container text-center">
                 <h3 className="text-normal">Top 100 Albums iTunes - Find your album</h3>
                 <form className="top-search" onSubmit={submit} >
