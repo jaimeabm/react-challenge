@@ -357,17 +357,12 @@ h6 {
 /* Search Section Styles Starts */
 
 .search-area {
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    box-shadow: none;
-    background-color: transparent;
-    padding-top: 130px;
-    padding-bottom: 170px;
     background-image: url(../img/section-bg2.jpg);
-    background-size: 100%;
-    -moz-appearace:none;
-    -webkit-appearace:none;
-    appearace:none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .search-area.condensed {
@@ -496,12 +491,12 @@ h6 {
 
 /* Generic Styles Starts */
 
-/* .parallax {
+.parallax {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-} */
+}
 
 .food-menu-grid .hover-content .overlay h4 a:hover {
     text-decoration: none;
