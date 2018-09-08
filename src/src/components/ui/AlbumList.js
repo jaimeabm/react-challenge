@@ -16,7 +16,7 @@ class AlbumList extends Component {
             <div className="row">
                 {
                     hasErrors ?
-                        <p>Errors, unable to pull the data</p> :
+                        <p>Error, unable to pull the data</p> :
                         isLoading == true ?
                             <p>Loading Data</p> :
                             entry === null || entry.length === 0 ?
