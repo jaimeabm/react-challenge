@@ -361,6 +361,8 @@ h6 {
     background-image: url(../img/section-bg2.jpg);
     background-repeat: no-repeat;
     background-position: 0px 0px;
+    -webkit-background-size: 1920px 960px;
+    -moz-background-size: cover;
     background-size: cover;
     box-shadow: none;
     background-color: transparent;
