@@ -4,6 +4,7 @@ let albumItemStyle = {
     width: "25rem"
 };
 
+
 const AlbumItem = (e = {}) => 
         <div className="col-xs-12 col-sm-3 col-md-3 text-center">
             <div className="panel panel-default card " style={albumItemStyle}>
