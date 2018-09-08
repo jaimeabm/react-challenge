@@ -357,12 +357,17 @@ h6 {
 /* Search Section Styles Starts */
 
 .search-area {
+    
+    background-position: 0px 0px;
+    box-shadow: none;
+    padding-top: 130px;
+    padding-bottom: 170px;
     background-image: url(../img/section-bg2.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+    -moz-appearace:none;
+    -webkit-appearace:none;
+    appearace:none;
 }
 
 .search-area.condensed {
