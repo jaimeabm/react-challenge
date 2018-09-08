@@ -5,7 +5,7 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: ['babel-polyfill', "./src/index.js"],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js',
