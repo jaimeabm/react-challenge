@@ -357,16 +357,14 @@ h6 {
 /* Search Section Styles Starts */
 
 .search-area {
-    border-radius: 0px;
-    background-image: url(../img/section-bg2.jpg);
     background-repeat: no-repeat;
     background-position: 0px 0px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
     box-shadow: none;
     background-color: transparent;
-    z-index: 90000;
+    padding-top: 130px;
+    padding-bottom: 170px;
+    background-image: url(../img/section-bg2.jpg);
+    background-size: 100%;
     -moz-appearace:none;
     -webkit-appearace:none;
     appearace:none;
@@ -382,6 +380,8 @@ h6 {
     margin-bottom: 50px;
     color: #fff;
 }
+
+.top-search {}
 
 .top-search .input-group-md {
     border-collapse: separate;
@@ -496,19 +496,12 @@ h6 {
 
 /* Generic Styles Starts */
 
-.parallax {
+/* .parallax {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
-
-.parallax {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+} */
 
 .food-menu-grid .hover-content .overlay h4 a:hover {
     text-decoration: none;
