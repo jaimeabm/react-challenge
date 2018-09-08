@@ -357,9 +357,16 @@ h6 {
 /* Search Section Styles Starts */
 
 .search-area {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    box-shadow: none;
+    background-color: transparent;
     padding-top: 130px;
     padding-bottom: 170px;
     background-image: url(../img/section-bg2.jpg);
+    -moz-appearace:none;
+    -webkit-appearace:none;
+    appearace:none;
 }
 
 .search-area.condensed {
