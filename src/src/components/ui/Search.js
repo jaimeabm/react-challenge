@@ -9,7 +9,7 @@ const Search = ({onFilter = f=>f}) =>{
     }
 
     return (
-        <section className="search-area parallax">
+        <section className="search-area flip parallax">
             <div className="container text-center">
                 <h3 className="text-normal">Top 100 Albums iTunes - Find your album</h3>
                 <form className="top-search" onSubmit={submit} >

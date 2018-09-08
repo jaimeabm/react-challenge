@@ -356,18 +356,14 @@ h6 {
 
 /* Search Section Styles Starts */
 
-.search-area {
-    
-    background-position: 0px 0px;
-    box-shadow: none;
-    padding-top: 130px;
-    padding-bottom: 170px;
+.search-area.flip {
     background-image: url(../img/section-bg2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    -moz-appearace:none;
-    -webkit-appearace:none;
-    appearace:none;
+}
+
+.search-area {
+    padding-top: 30%;
+    padding-bottom: 60px;
+    background-image: url(../img/section-bg2.jpg);
 }
 
 .search-area.condensed {
@@ -380,8 +376,6 @@ h6 {
     margin-bottom: 50px;
     color: #fff;
 }
-
-.top-search {}
 
 .top-search .input-group-md {
     border-collapse: separate;
