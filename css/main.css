@@ -357,14 +357,14 @@ h6 {
 /* Search Section Styles Starts */
 
 .search-area {
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    box-shadow: none;
     background-color: transparent;
+    background-image: url(../img/section-bg2.jpg)!important;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: none;
     padding-top: 130px;
     padding-bottom: 170px;
-    background-image: url(../img/section-bg2.jpg);
-    background-size: 100%;
     -moz-appearace:none;
     -webkit-appearace:none;
     appearace:none;
@@ -380,8 +380,6 @@ h6 {
     margin-bottom: 50px;
     color: #fff;
 }
-
-.top-search {}
 
 .top-search .input-group-md {
     border-collapse: separate;
