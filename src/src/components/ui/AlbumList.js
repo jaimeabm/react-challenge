@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import AlbumItem from './AlbumItem'
 
+
 class AlbumList extends Component {
     componentDidMount() {
         console.log("componentDidMount event in AlbumList Component")

@@ -274,11 +274,6 @@ h6 {
     background-color: #FF4433;
 }
 
-
-
-
-
-
 /* Top Links Styles Starts */
 
 .top-links {
@@ -292,8 +287,6 @@ h6 {
 .top-links li a {
     color: #fff;
 }
-
-
 
 /* Main Menu Styles Starts */
 
@@ -352,8 +345,6 @@ h6 {
     background-color: #ca402b;
 }
 
-
-
 /* Search Section Styles Starts */
 
 .search-area.flip {
@@ -364,6 +355,12 @@ h6 {
     padding-top: 30%;
     padding-bottom: 60px;
     background-image: url(../img/section-bg2.jpg);
+}
+
+.main-search {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
 }
 
 .search-area.condensed {
