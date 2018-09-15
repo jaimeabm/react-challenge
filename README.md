@@ -19,4 +19,4 @@ Base Requirements For All Levels
 -  Webpack 3.x
 -  NodeJS
 
-To see how to build the project chedk the setting a new [front-end development environment](https://github.com/jaimeabm/react-challenge/blob/master/new_dev_env-frontend.md)
+To see how to build the project check [build a new front-end development environment](https://github.com/jaimeabm/react-challenge/blob/master/new_dev_env-frontend.md)
